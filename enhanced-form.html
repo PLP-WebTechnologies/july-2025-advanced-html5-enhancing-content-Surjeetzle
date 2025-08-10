@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven - Menu & Reservation</title>
+</head>
+<body>
+
+<header>
+    <h1>☕ Coffee Haven</h1>
+    <p>Your daily dose of perfect brews.</p>
+</header>
+
+<main>
+    <!-- Coffee Menu Section -->
+    <section>
+        <h2>Our Signature Coffee Blends</h2>
+        <ul>
+            <li>Espresso</li>
+            <li>Cappuccino</li>
+            <li>Latte Macchiato</li>
+            <li>Mocha Delight</li>
+        </ul>
+
+        <h2>Price List</h2>
+        <table border="1">
+            <caption>Menu & Prices</caption>
+            <thead>
+                <tr>
+                    <th>Beverage</th>
+                    <th>Size</th>
+                    <th>Price (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Espresso</td>
+                    <td>Single</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>Medium</td>
+                    <td>3.50</td>
+                </tr>
+                <tr>
+                    <td>Mocha Delight</td>
+                    <td>Large</td>
+                    <td>4.20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Our Coffee in Action</h2>
+        <img src="coffee.jpg" alt="Freshly brewed coffee cup" width="250">
+        <audio controls>
+            <source src="coffee-shop-sounds.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+        <video width="320" controls>
+            <source src="coffee-pouring.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section>
+        <h2>Reserve a Table</h2>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required><br><br>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email"><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Details</legend>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br><br>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required><br><br>
+                
+                <label>Seating Preference:</label>
+                <input type="radio" id="indoor" name="seating" value="indoor" required>
+                <label for="indoor">Indoor</label>
+                <input type="radio" id="outdoor" name="seating" value="outdoor">
+                <label for="outdoor">Outdoor</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Requests</legend>
+                <label for="requests">Requests (optional):</label><br>
+                <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Allergies, occasions, etc."></textarea><br><br>
+                
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Reserve Table">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Coffee Haven. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
